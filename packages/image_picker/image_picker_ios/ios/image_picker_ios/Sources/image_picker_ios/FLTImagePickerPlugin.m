@@ -133,10 +133,10 @@ typedef NS_ENUM(NSInteger, ImagePickerClassType) { UIImagePickerClassType, PHPic
   imagePickerController.delegate = self;
   NSMutableArray<NSString *> *mediaTypes = [[NSMutableArray alloc] init];
   if (context.includeImages) {
-    [mediaTypes addObject:(NSString *)kUTTypeImage];
+    [mediaTypes addObject:@"public.image"];
   }
   if (context.includeVideo) {
-    [mediaTypes addObject:(NSString *)kUTTypeMovie];
+    [mediaTypes addObject:@"public.movie"];
     imagePickerController.videoQuality = UIImagePickerControllerQualityTypeHigh;
   }
   imagePickerController.mediaTypes = mediaTypes;
