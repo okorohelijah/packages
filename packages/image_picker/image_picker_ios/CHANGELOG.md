@@ -1,3 +1,7 @@
+## 0.8.13+11
+
+* Stops referencing the deprecated `kUTTypeGIF` constant, which is a compile error when building with Xcode 27.
+
 ## 0.8.13+10
 
 * Returns an error when selected image data cannot be decoded.
